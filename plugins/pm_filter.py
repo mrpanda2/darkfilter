@@ -1887,8 +1887,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        
-    elif query.data == "chnl_info":
+       elif query.data == "chnl_info_grp":
             btn = [[
                     InlineKeyboardButton("↼ ʙᴊ ʜɪɴᴅɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bdgmoviesindia')
                 ],[
@@ -1901,11 +1900,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton("↼ ʙᴊ ʜᴇʟᴘ ᴅᴇsᴋ ⇀", url='https://t.me/bjcinemahelpdesk')
                 ],[
                     InlineKeyboardButton("↼ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ⇀", url='https://t.me/bjcinemabackup2')
-                ],[
-                    
+                ],[                    
                     InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
                    ]]
-        
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
@@ -1928,8 +1925,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=(script.CHNL_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
-          )
-
+    )
+    
         if str(grp_id) != str(grpid):
             await query.message.edit("Yᴏᴜʀ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴ Hᴀs Bᴇᴇɴ Cʜᴀɴɢᴇᴅ. Gᴏ Tᴏ /connections ᴀɴᴅ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.")
             return await query.answer(MSG_ALRT)
