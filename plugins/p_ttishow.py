@@ -61,7 +61,7 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('✪ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                                                                           InlineKeyboardButton('✪ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
