@@ -153,7 +153,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton(✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                          InlineKeyboardButton('✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                          ]
                         ]
                     )
@@ -169,7 +169,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton(✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                          InlineKeyboardButton('✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                          ]
                         ]
                     )
@@ -326,7 +326,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                          InlineKeyboardButton(✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                          InlineKeyboardButton('✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                          ]
                     ]
                 )
@@ -387,7 +387,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                          InlineKeyboardButton(✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                          InlineKeyboardButton('✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                          ]
                     ]
                 )
@@ -446,7 +446,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                          InlineKeyboardButton(✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info")
+                          InlineKeyboardButton('✪ Jᴏɪɴ ᴄʜᴀɴɴᴇʟs Cʜᴀɴɴᴇʟs ✪', callback_data="chnl_info_grp")
                          ]
                     ]
                 )
