@@ -1887,21 +1887,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "setting_btn":
-        buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SETTING_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data.startswith("setgs"):
-        ident, set_type, status, grp_id = query.data.split("#")
-        grpid = await active_connection(str(query.from_user.id))
-        
-    elif query.data == "chnl_info_grp":
+    )
+    elif query.data == "chnl_info":
             btn = [[
                     InlineKeyboardButton("↼ ʙᴊ ʜɪɴᴅɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bdgmoviesindia')
                 ],[
@@ -1917,8 +1904,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     
                     InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
-                 ]]
+                   ]]
         
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto("https://graph.org/file/2f7b5a8b0d33102d19c8d.jpg")
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text="▣☐☐"
+            )
+            await asyncio.sleep(0.1)
+            await query.message.edit_text(
+                text="▣▣☐"
+            )
+            await asyncio.sleep(0.2)
+            await query.message.edit_text(
+                text="▣▣▣"
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.CHNL_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+          )
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Yᴏᴜʀ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴ Hᴀs Bᴇᴇɴ Cʜᴀɴɢᴇᴅ. Gᴏ Tᴏ /connections ᴀɴᴅ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.")
