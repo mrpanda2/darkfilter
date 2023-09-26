@@ -1846,45 +1846,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
         )       
-    elif query.data == "chnl_info_grp":
-            btn = [[
-                    InlineKeyboardButton("↼ ʙᴊ ʜɪɴᴅɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bdgmoviesindia')
-                ],[
-                    InlineKeyboardButton("↼ ʙᴊ ɢᴜᴊᴀʀᴀᴛɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bjGUJARATI')
-                ],[
-                    InlineKeyboardButton("↼ ʙᴊ ᴡᴇʙ sᴇʀɪᴇs ⇀", url='https://t.me/bjwebseries0')
-                ],[
-                    InlineKeyboardButton("↼ ғᴏʀ ᴘᴏʀɴ ɢʀᴏᴜᴘ ᴅᴍ ᴍᴇ ⇀", url='https://t.me/BDGDIRECTSH')
-                ],[
-                    InlineKeyboardButton("↼ ʙᴊ ʜᴇʟᴘ ᴅᴇsᴋ ⇀", url='https://t.me/bjcinemahelpdesk')
-                ],[
-                    InlineKeyboardButton("↼ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ⇀", url='https://t.me/bjcinemabackup2')
-                ],[                    
-                    InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
-                   ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto("https://graph.org/file/2f7b5a8b0d33102d19c8d.jpg")
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text="▣☐☐"
-            )
-            await asyncio.sleep(0.1)
-            await query.message.edit_text(
-                text="▣▣☐"
-            )
-            await asyncio.sleep(0.2)
-            await query.message.edit_text(
-                text="▣▣▣"
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.CHNL_INFO),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-        ) 
+    
     elif query.data == "dicl_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
