@@ -58,12 +58,12 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MOVIES_SERIES_GROUPS')
-SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me/Unknown_Botz')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinema_Moviesz')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/bdgmoviesindia')
+SPRT_CHNL = environ.get('SPRT_CHNL', 'https://t.me/bjcinemahelpdesk')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bjcinemabackup2')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+PkQmIhZMVDxhZmVl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+PkQmIhZMVDxhZmVl')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/bjcinemabackup2')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001910953253'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Unknown_Botz')
@@ -82,7 +82,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
 
