@@ -1900,6 +1900,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
+        
+    elif query.data == "chnl_info_grp":
+            btn = [[
+                    InlineKeyboardButton("↼ ʙᴊ ʜɪɴᴅɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bdgmoviesindia')
+                ],[
+                    InlineKeyboardButton("↼ ʙᴊ ɢᴜᴊᴀʀᴀᴛɪ ᴄɪɴᴇᴍᴀ® ⇀", url='https://t.me/bjGUJARATI')
+                ],[
+                    InlineKeyboardButton("↼ ʙᴊ ᴡᴇʙ sᴇʀɪᴇs ⇀", url='https://t.me/bjwebseries0')
+                ],[
+                    InlineKeyboardButton("↼ ғᴏʀ ᴘᴏʀɴ ɢʀᴏᴜᴘ ᴅᴍ ᴍᴇ ⇀", url='https://t.me/BDGDIRECTSH')
+                ],[
+                    InlineKeyboardButton("↼ ʙᴊ ʜᴇʟᴘ ᴅᴇsᴋ ⇀", url='https://t.me/bjcinemahelpdesk')
+                ],[
+                    InlineKeyboardButton("↼ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ⇀", url='https://t.me/bjcinemabackup2')
+                ],[
+                    
+                    InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
+                 ]]
+        
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Yᴏᴜʀ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴ Hᴀs Bᴇᴇɴ Cʜᴀɴɢᴇᴅ. Gᴏ Tᴏ /connections ᴀɴᴅ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.")
